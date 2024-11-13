@@ -2,6 +2,22 @@ import java.util.ArrayList;
 
 public class Demo {
     public static void main(String[] args) {
+        Dosen dosen1 = new Dosen("19940201", "Widia, S.Kom. M.Kom", "199402");
+        TenagaKependidikan tendik1 = new TenagaKependidikan("19750301", "Aida, A.Md.", "Tenaga Administrasi");
+
+        train(dosen1);
+        train(tendik1);
+    }
+        public static void train(Pegawai pegawai){
+            System.out.println("Memberikan pelatihan untuk pegawai");
+            pegawai.displayInfo();
+
+            //Hanya Test
+            System.out.println(pegawai.nidn);
+            System.out.println(pegawai.kategori);
+            pegawai.mengajar
+        }
+}
         // Membuat objek dosen
         //Dosen dosen1 = new Dosen("19940201", "Widia, S.Kom., M.Kom.", "199402");
         //Dosen dosen2 = new Dosen("19780165", "Muhammad, S.T., M.T.", "197801");
@@ -20,23 +36,23 @@ public class Demo {
         pegawai1.displayInfo();*/
 
         // Downcasting
-        Dosen dosen1 = new Dosen("19940201", "Widia, S.Kom., M.Kom.", "199402");
-        Pegawai pegawai1 = dosen1;
-        System.out.println(pegawai1.nip);
-        System.out.println(pegawai1.nama);
-        pegawai1.displayInfo();
+        // Dosen dosen1 = new Dosen("19940201", "Widia, S.Kom., M.Kom.", "199402");
+        // Pegawai pegawai1 = dosen1;
+        // System.out.println(pegawai1.nip);
+        // System.out.println(pegawai1.nama);
+        // pegawai1.displayInfo();
 
         //TenagaKependidikan test = (TenagaKependidikan) pegawai1;
 
-        Dosen newDosen = (Dosen) pegawai1;
-        System.out.println(newDosen.nama);
-        System.out.println(newDosen.nidn);
-        newDosen.mengajar();
+        // Dosen newDosen = (Dosen) pegawai1;
+        // System.out.println(newDosen.nama);
+        // System.out.println(newDosen.nidn);
+        // newDosen.mengajar();
         // Membuat objek tenaga kependidikan
         /*TenagaKependidikan tendik1 = new TenagaKependidikan("19750301", "Aida, A.Md.", "Tenaga Administrasi");
         TenagaKependidikan tendik2 = new TenagaKependidikan("19650304", "Rika, S.T.", "Tenaga Laboratorium");*/
         
-        ArrayList<Pegawai> daftarPegawai = new ArrayList<Pegawai>(); 
+        // ArrayList<Pegawai> daftarPegawai = new ArrayList<Pegawai>(); 
         // Menampilkan informasi dosen
         /*System.out.println("Data Dosen :");
         dosen1.displayInfo();
@@ -55,5 +71,5 @@ public class Demo {
         daftarPegawai.add(tendik1);
         daftarPegawai.add(tendik2);
         System.out.println("Jumlah Pegawai: " + daftarPegawai.size());*/
-    }
-}
+//     }
+// }
