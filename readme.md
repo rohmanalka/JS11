@@ -1,10 +1,10 @@
 # Laporan Praktikum
 
 ## Nama Anggota:
-- Ivan Rizal Ahmadi (234176)
+- Ivan Rizal Ahmadi (2341760128)
 - Luthfi Putra Mahardika (2341760181)
 - Muhammad Rohman Al K (2341760055)
-- Meisy Nadia Nababan (234176)
+- Meisy Nadia Nababan (2341760031)
 - Saria Fauzani (234176)
 
 ---
@@ -226,4 +226,13 @@ public static void train(Pegawai pegawai){
 2. Pada kode program baris kedua, upcasting dilakukan secara implisit, seperti pada baris kedua (Pegawai pegawai1 = new Dosen();).
 3. instanceOf digunakan untuk memeriksa apakah suatu objek merupakan instance dari tipe tertentu dalam hierarki inheritance. Ini berguna untuk menentukan jenis asli dari suatu objek ketika berada di lingkungan polimorfisme.
 4. Heterogenous collection adalah koleksi yang dapat menyimpan elemen-elemen dengan berbagai tipe data yang berbeda, asalkan elemen-elemen tersebut berada dalam satu hierarki inheritance. Contohnya adalah ArrayList bertipe superclass yang dapat menyimpan instance dari subclass-subclass-nya.
-5. 
+5. Ya, Dapat dilakukan jika object asli adalah instance dari class Dosen.
+```java
+Pegawai pegawai1 = new Dosen(); // Instansiasi object dari class Dosen
+            if (pegawai instanceof Dosen) {
+                Dosen dosen = (Dosen) pegawai; // Downcasting ke tipe Dosen
+                System.out.println("Downcasting berhasil.");
+            } else {
+                System.out.println("Downcasting gagal.");
+            }
+```
