@@ -92,7 +92,7 @@ daftarPegawai.add(dosen1);
         daftarPegawai.add(tendik2);
         System.out.println("Jumlah Pegawai: " + daftarPegawai.size());
 ```
-
+#### Output dari kode diatas:
 ![Run Gambar 2.3](img/2.3%20Heterogenous.png)
 
 ## 2.4 Object Casting
@@ -105,6 +105,7 @@ System.out.println(dosen1.nama);
 System.out.println(dosen1.nidn);
 dosen1.mengajar();
 ```
+#### Output dari kode diatas:
 ![Run Gambar 2.4](img/2.4%20ModifikasiMain.png)
 
 #### Upcasting object dosen1 menjadi object Pegaawai
@@ -118,6 +119,7 @@ System.out.println(pegawai1.nama);
 System.out.println(pegawai1.nidn);
 pegawai1.mengajar();
 ```
+#### Output dari kode diatas:
 ![Run Gambar UpcastingDosen1](img/2.4%20UpcastDosen1-Pegawai.png)
 
 ### Upcasting
@@ -131,6 +133,7 @@ System.out.println(pegawai1.nama);
 // pegawai1.mengajar();
 pegawai1.displayInfo();
 ```
+#### Output dari kode diatas:
 ![Run Gambar Upcasting](img/2.4%20Upcasting.png)
 
 ### Downcasting pegawai1 ke tendik
@@ -144,6 +147,7 @@ pegawai1.displayInfo();
 
 TenagaKependidikan test = (TenagaKependidikan) pegawai1;
 ```
+#### Output dari kode diatas:
 ![Run Gambar Downcasting](img/2.4%20DowncastTendik.png)
 
 ### Downcasting pegawai1 ke dosen
@@ -162,6 +166,7 @@ System.out.println(newDosen.nama);
 System.out.println(newDosen.nidn);
 newDosen.mengajar();
 ```
+#### Output dari kode diatas:
 ![Run Gambar Downcast Dosen](img/2.4%20DowncastDosen.png)
 
 ## 2.5 Polymorphic Arguments & instanceOf
@@ -213,6 +218,7 @@ public static void train(Pegawai pegawai){
     }
 }
 ```
+#### Output dari kode diatas:
 ![Run Gambar InstanceOf](img/2.5%20InstanceOf.png)
 
 ## Jawaban
